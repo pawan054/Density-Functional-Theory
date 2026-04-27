@@ -1,0 +1,98 @@
+.box-preview {
+    background-color: rgb(9, 9, 9);
+    margin-top: 0px;
+    padding: 5px;
+     display: block;
+     margin-bottom: 10px;
+                
+}
+.website-logo {
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    display: inline-block;
+    vertical-align: top;
+}
+.box-content {
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    font-weight: bold;
+    color: wheat;
+    vertical-align: top;
+    display: inline-block;
+ }
+.search-bar {
+    font-size: 20px;
+    width: 600px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 300px;
+    border-radius: 20px;
+    vertical-align: 25px;
+        
+}
+.donate-button {
+    background-color: rgb(245, 18, 18);
+    width: 80px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    padding-right: 10px;
+}
+.team-content {
+    display: inline-block;
+    margin-left: 40px;
+}
+.subteam-content {
+    display: block;
+    margin-left: 50px;
+    color: white;
+    background-color: rgb(9, 9, 128);
+    font-size: 16px;
+}
+.box-title {
+    display:block;
+}
+.main-content {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 10px;
+    margin-right: 40px;
+    color: white;
+    display: inline-block;
+}
+.main-title {
+     color: wheat;
+}
+ .c1 {
+    margin-left: 50px;
+    color: wheat;
+}
+.content-preview {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    padding: 300px;
+}
+
+.footer-content {
+    background-color: blueviolet;
+    padding: 100px;
+    display: block;
+}
+.footer-subcontent {
+    display: inline-block;
+    margin-right: 150px;
+    vertical-align: top;
+}

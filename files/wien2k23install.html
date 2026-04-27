@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wien2k Installation</title>
+        <link rel="stylesheet" href="mainwebsite.css">
+        <style>
+            .title-preview {
+                display: block;
+                background-color: pink;
+            }
+            .block-preview {
+                display: flex;
+                background-color: white;
+                border: lightgrey;
+                border-style: solid;
+                margin-top: 10px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            .grid-preview {
+                display: grid;
+                grid-template-columns: 1fr 5fr;
+                column-gap: 50px;
+            }
+            .title-text {
+                display: inline-block;
+                font-family: Time New Roman;
+                font-size: 25px;
+                font-weight: bold;
+                font-style: normal;
+                text-align: left;
+                line-height: 50px;
+            }
+            .content-text {
+                display: inline-block;
+                font-family: Time New Roman;
+                font-size: 25px;
+                font-weight: normal;
+                font-style: normal;
+                text-align: left;
+                border-left: solid;
+                border-color: rgb(1, 1, 177);
+                padding-left: 25px;
+                line-height: 40px;
+                
+            }
+            .title-preview {
+            font-family: 'Times New Roman';
+            font-size: 30px;
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        </style>
+    </head>
+    <body>
+        <header class="box-preview">
+            <img class="website-logo" src="bigphysics-logo.jpg"> 
+            <p class="box-content"> Big Physics</p>
+            <input class="search-bar" type="text" placeholder="Search Big Physics...">
+            <p class="donate-button">Donate</p>
+            <p class="donate-button">Subscribe</p>
+            <div class="team-content">
+                <div class="subteam-content"> <p> log in / Sign in <p> </div>
+                    <div class="subteam-content"> <p> Submit note &amp earn money <p> </div>
+                <div class="subteam-content"> <p> Research <p> </div>
+                <div class="subteam-content"> <p> Publication <p> </div>
+
+            </div>
+            <div class="box-title"> 
+                <div class="main-content"><a href="sciencebasic.html" style="text-decoration: none; color: black;"><p class="c1">Science Basic</p></a></div>
+                <div class="main-content"><a href="physics2.html" style="text-decoration: none; color: black;"><p class="main-title">Physics +2</p></a></div>
+                <div class="main-content"><a href="math2.html" style="text-decoration: none; color: black;"><p class="main-title">Math +2</p></a></div>
+                <div class="main-content"><a href="physicsadvance.html" style="text-decoration: none; color: black;"><p class="main-title">Physics Advance</p></a></div>
+                <div class="main-content"><a href="dft.html" style="text-decoration: none; color: black;"><p class="main-title">Density Functional Theory</p></a></div>
+                <div class="main-content"><a href="wien2k.html" style="text-decoration: none; color: black;"><p class="main-title"> Wien2k</p></a></div>
+                <div class="main-content"><a href="qe.html" style="text-decoration: none; color: black;"><p class="main-title">QE</p></a></div>
+                <div class="main-content"><a href="vasp.html" style="text-decoration: none; color: black;"><p class="main-title">VASP</p></a></div>
+                <div class="main-content"><a href="phonon.html" style="text-decoration: none; color: black;"><p class="main-title">Phonons</p></a></div>
+                <div class="main-content"><a href="boltztrap.html" style="text-decoration: none; color: black;"><p class="main-title">BoltzTrap2</p></a></div>
+            </div>
+        </header>
+        <main>
+            <div class="title-preview">
+                Wien2k_23.2 Installation
+            </div>
+            <div class="block-preview">
+                <div class="grid-preview">
+                    <div class="title-text">
+                        <menu>
+                            <li>Requirements</li>
+                            <li>Install requirements</li>
+                            <li>Download Wien2k tar file</li>
+                            <li>Install Wine2k</li>
+                            <li>Set up user configuration</li>
+
+                        </menu>
+                    </div>
+                    <div class="content-text">
+                            In this tutorial, you will learn how to install Wien2k 23.2 version
+                            using gfortran in your Linux operating system. Since Wien2k is mostly written
+                            in Fortran language, you need to install some related libraries and packages.
+                            Install following packages: <br>
+                            <strong>Install prerequisites</strong>
+                            <menu>
+                                <li>sudo apt-get update</li>
+                                <li>sudo apt-get upgrade</li>
+                                <li>sudo apt-get install gfortran</li>
+                                <li>sudo apt-get install grace</li>
+                                <li>sudo apt-get install gnuplot</li>
+                                <li>sudo apt-get install csh</li>
+                                <li>sudo apt-get install tcsh</li>
+                                <li>sudo apt-get install tk</li>
+                                <li>sudo apt-get install build-essential</li>
+                                <li>sudo apt-get install ghostscript</li>
+                                <li>sudo apt-get install c++</li>
+                                <li>sudo apt-get install perl6</li>
+                                <li>sudo apt-get install octave</li>
+                                <li>sudo apt-get install gfortran</li>
+                                <li>sudo apt-get install gcc</li>
+                                <li>sudo apt-get install bc</li>
+                                <li>sudo apt-get install make</li>
+                                <li>sudo apt-get install cmake</li>
+                                <li>sudo apt-get install awk</li>
+                                <li>sudo apt-get install vi gedit emacs</li>
+                                <li>sudo apt-get install okular evince xpdf</li>
+                                <li>sudo apt-get install python3</li>
+                                <li>sudo apt-get install gfortran</li>
+                                <li>sudo apt-get install python3-pip</li>
+                                <li>pip3 install numpy</li>
+                                <li>sudo apt-get install libblas-dev</li>
+                                <li>sudo apt-get install liblapack-dev</li>
+                                <li>sudo apt-get install libopenblas-dev</li>
+                                <li>sudo apt-get install libvips</li>
+                            </menu>
+                            <strong>Install FFTW3</strong>
+                            <menu>
+                                <li>Download FFTW 3.3.10 from website <a href="">https://www.fftw.org/fftw-3.3.10.tar.gz</a> </li>
+                                <li>Look for it in Download folder, create folder software in home, and move it here i.e., <br>
+                                cd Downloads <br> mv fftw-3.3.10.tar.gz home/software <br> cd home/software</li>
+                                <li>tar -xvf fftw-3.3.10.tar.gz</li>
+                                <li>cd fftw-3.3.10</li>
+                                <li>./configure --prefix=/opt/fftw3</li>
+                                <li>make</li>
+                                <li>sudo make install</li>
+                            </menu>
+                            <strong>Install Xcryden</strong>
+                            <menu>
+                                <li>sudo apt install xcrysden</li>
+                                <li>copy the path and add to .bash.rc file i.e., <br>
+                                    which xcrysden
+                                    <br> gedit ~/.bashrc <br></li>
+                                    <li>at the bottom of .bashrc, copy following lines: <br> xcy_top=usr/bin/ <br> xcy_bottom=/tmp
+                                    <br> export xcy_top xcy_bottom</li>
+                                </li>
+                            </menu>
+                        <strong>Install Wien2k</strong>
+                        <menu>
+                            <li>Download the Wien2k_23.2.tar file</li>
+                            <li>tar -xvf wien2k WIEN2K_23.2.tar</li>
+                            <li>gunzip *.gz</li>
+                            <li>chmod +x ./expand lapw</li>
+                            <li>./expand lapw</li>
+                            <li>./siteconfig lapw</li>
+                            In new version of wien2k i.e. 24, add Real libraries=/usr/lib/x86_64-linux-gnu/libopenblas.so.0
+                            while in older version, Real libraries=-lblas -llapack -lpthread
+                            <li>./userconfig lapw</li>
+                        </menu>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer-content">
+            <div class="footer-subcontent"> Contact 
+                <p>Pawan Joshi</p>
+                <p>Master in Science (Physics)</p>
+                <p> Central Department of Physics, Tribhuvan University</p>
+                <p>pawan.775511@cdp.tu.edu.np</p>
+            </div>
+            <div class="footer-subcontent"> Adress <p>Kathmandu, Nepal</p> </div>
+            <div class="footer-subcontent"> Important links</div>
+        </footer>
+    </body>
+</html> 
